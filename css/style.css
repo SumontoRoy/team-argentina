@@ -26,6 +26,10 @@ a{
 .menu a{
     color: #ffffff;
     padding-right: 36px;
+    transition: color 0.4s;
+}
+.menu a:hover{
+    color: #F5B312;
 }
 .login{
     padding: 10px 24px;
@@ -135,6 +139,17 @@ a{
     font-weight: 700;
     text-align: center;
     text-shadow: 5px 5px 20px #8a8989;
+    position: relative;
+}
+.gallery-container h1::after{
+    position: absolute;
+    content: '';
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 120px;
+    height: 5px;
+    background-color: #F5B312;
 }
 .gallery-img{
     display: grid;
